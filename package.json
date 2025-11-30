@@ -1,0 +1,78 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "keywords": [
+    "eslint-plugin",
+    "example",
+    "monorepo",
+    "nextjs",
+    "playwright",
+    "prisma",
+    "remix",
+    "storybook",
+    "vite",
+    "workspace"
+  ],
+  "author": {
+    "name": "Reza Fauzi Augusdi",
+    "url": "https://github.com/fbtwitter"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/fbtwitter/portfolio",
+  "repository": "fbtwitter/portfolio",
+  "scripts": {
+    "check:git-pristine": "./scripts/check-git-pristine.sh",
+    "clean:global-cache": "rimraf ./.cache",
+    "clean:turbo": "turbo clean && rimraf --glob '**/.turbo' '**/turbo-*.log'",
+    "deps:check": "npx npm-check-updates@latest --configFileName .ncurc.yml --workspaces --root --mergeConfig",
+    "deps:update": "npx npm-check-updates@latest --configFileName .ncurc.yml -u --workspaces --root --mergeConfig",
+    "g:build": "turbo run build",
+    "g:changeset": "changeset",
+    "g:check-dist": "turbo run check-dist",
+    "g:clean": "yarn clean:global-cache && yarn clean:turbo && rimraf ./out && yarn workspaces foreach -A -ptv run clean",
+    "g:codegen": "turbo run codegen",
+    "g:fix-all-files": "turbo run fix-all-files",
+    "g:lint": "TIMING=1 turbo run lint --color",
+    "g:lint-staged-files": "lint-staged --allow-empty",
+    "g:lint-styles": "turbo run lint-styles --color",
+    "g:release": "yarn g:build && changeset publish",
+    "g:test-e2e": "turbo run test-e2e",
+    "g:test-unit": "turbo run test-unit",
+    "g:typecheck": "turbo run typecheck",
+    "g:turbo": "turbo",
+    "install:playwright": "playwright install",
+    "install:husky": "husky",
+    "nuke:node_modules": "rimraf --glob '**/node_modules'",
+    "postinstall": "run-s install:husky g:codegen",
+    "check:install": "yarn dlx @yarnpkg/doctor ."
+  },
+  "dependencies": {
+    "cross-env": "7.0.3"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "0.5.1",
+    "@changesets/cli": "2.28.1",
+    "@commitlint/cli": "19.7.1",
+    "@commitlint/config-conventional": "19.7.1",
+    "@types/shell-quote": "1.7.5",
+    "@your-org/eslint-config-bases": "workspace:^",
+    "eslint": "8.57.1",
+    "husky": "9.1.7",
+    "lint-staged": "15.4.3",
+    "npm-run-all2": "7.0.2",
+    "prettier": "3.5.2",
+    "rimraf": "6.0.1",
+    "shell-quote": "1.8.2",
+    "syncpack": "13.0.2",
+    "turbo": "2.4.4",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "packageManager": "yarn@4.6.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "name": "@your-org/ui-lib",
+  "version": "3.15.2",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "author": {
+    "name": "Vanvelthem Sébastien",
+    "url": "https://github.com/fbtwitter"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/fbtwitter/portfolio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fbtwitter/portfolio",
+    "directory": "packages/ui-lib"
+  },
+  "scripts": {
+    "build": "echo \"Unrequired and disabled when using tsonfig paths aliases, run 'build-force' to test a build.\"",
+    "build-force": "tsup",
+    "build-storybook": "storybook build --output-dir build/storybook",
+    "clean": "rimraf ./dist ./build ./tsconfig.tsbuildinfo ./node_modules/.cache",
+    "dev": "tsup --watch",
+    "fix-all-files": "eslint . --ext .ts,.tsx,.js,.jsx,.cjs,.mjs --fix",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.cjs,.mjs --cache --cache-location ../../.cache/eslint/ui-lib.eslintcache",
+    "serve-storybook": "sirv build/storybook --cors --port 8888",
+    "storybook": "storybook dev -p 6006",
+    "test": "run-s test-unit",
+    "test-unit": "echo \"No unit tests yet\"",
+    "typecheck": "tsc --project ./tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@your-org/ts-utils": "workspace:^"
+  },
+  "devDependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.0",
+    "@storybook/addon-essentials": "8.5.8",
+    "@storybook/addon-interactions": "8.5.8",
+    "@storybook/addon-links": "8.5.8",
+    "@storybook/blocks": "8.5.8",
+    "@storybook/react": "8.5.8",
+    "@storybook/react-vite": "8.5.8",
+    "@storybook/test": "8.5.8",
+    "@tailwindcss/forms": "0.5.10",
+    "@testing-library/dom": "10.4.0",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.2.0",
+    "@testing-library/user-event": "14.6.1",
+    "@types/node": "22.13.5",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "@vitejs/plugin-react-swc": "3.7.1",
+    "@vitest/coverage-v8": "2.1.8",
+    "@your-org/eslint-config-bases": "workspace:^",
+    "autoprefixer": "10.4.20",
+    "cross-env": "7.0.3",
+    "eslint": "8.57.1",
+    "eslint-plugin-tailwindcss": "3.18.0",
+    "npm-run-all2": "7.0.2",
+    "postcss": "8.5.3",
+    "prettier": "3.5.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "require-from-string": "2.0.2",
+    "rimraf": "6.0.1",
+    "rooks": "7.14.1",
+    "sirv": "3.0.1",
+    "sirv-cli": "3.0.1",
+    "storybook": "8.5.8",
+    "tailwindcss": "3.4.17",
+    "tsup": "8.3.6",
+    "typescript": "5.7.3",
+    "vite": "5.4.11",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "2.1.8"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@types/react": "^18.2.11",
+    "@types/react-dom": "^18.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "@types/react-dom": {
+      "optional": true
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "name": "@your-org/core-lib",
+  "version": "3.15.3",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "default": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "name": "Vanvelthem Sébastien",
+    "url": "https://github.com/fbtwitter"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/fbtwitter/portfolio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fbtwitter/portfolio",
+    "directory": "packages/core-lib"
+  },
+  "scripts": {
+    "build": "echo \"Unrequired and disabled when using tsonfig paths aliases, run 'build-force' to test a build.\"",
+    "build-force": "tsup",
+    "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
+    "dev": "tsup --watch",
+    "fix-all-files": "eslint . --ext .ts,.tsx,.js,.jsx,.cjs,.mjs --fix",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.cjs,.mjs --cache --cache-location ../../.cache/eslint/core-lib.eslintcache",
+    "test": "run-s test-unit",
+    "test-unit": "vitest run",
+    "test-unit-watch": "vitest watch --ui",
+    "typecheck": "tsc --project ./tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@your-org/ts-utils": "workspace:^",
+    "dequal": "^2.0.3"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.0",
+    "@testing-library/react": "16.2.0",
+    "@testing-library/user-event": "14.6.1",
+    "@types/node": "22.13.5",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "@vitejs/plugin-react": "4.3.3",
+    "@vitest/coverage-v8": "2.1.8",
+    "@vitest/ui": "2.1.8",
+    "@your-org/eslint-config-bases": "workspace:^",
+    "cross-env": "7.0.3",
+    "eslint": "8.57.1",
+    "npm-run-all2": "7.0.2",
+    "prettier": "3.5.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "rimraf": "6.0.1",
+    "tsup": "8.3.6",
+    "typescript": "5.7.3",
+    "vite": "5.4.11",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "2.1.8"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

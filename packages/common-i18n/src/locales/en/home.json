@@ -1,0 +1,9 @@
+{
+  "page": {
+    "title": "Home | nextjs-app | portfolio"
+  },
+  "btn": {
+    "getStarted": "Get started",
+    "liveDemo": "Live demo"
+  }
+}

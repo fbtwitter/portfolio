@@ -1,0 +1,61 @@
+{
+  "name": "@your-org/ts-utils",
+  "version": "1.1.2",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "author": {
+    "name": "Vanvelthem Sébastien",
+    "url": "https://github.com/fbtwitter"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/fbtwitter/portfolio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fbtwitter/portfolio",
+    "directory": "packages/ts-utils"
+  },
+  "scripts": {
+    "build": "echo \"Unrequired and disabled when using tsonfig paths aliases, run 'build-force' to test a build.\"",
+    "build-force": "tsup",
+    "check-dist": "es-check -v",
+    "check-size": "size-limit",
+    "clean": "rimraf ./dist ./coverage ./tsconfig.tsbuildinfo",
+    "dev": "tsup --watch",
+    "fix-all-files": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --fix",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs,.mts,.cts --cache --cache-location ../../.cache/eslint/ts-utils.eslintcache",
+    "test": "vitest run",
+    "test-unit": "vitest run",
+    "test-unit-watch": "vitest watch --ui",
+    "typecheck": "tsc --project ./tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@size-limit/file": "11.2.0",
+    "@types/node": "22.13.5",
+    "@vitest/coverage-v8": "2.1.8",
+    "@your-org/eslint-config-bases": "workspace:^",
+    "cross-env": "7.0.3",
+    "es-check": "8.0.1",
+    "eslint": "8.57.1",
+    "get-tsconfig": "4.10.0",
+    "prettier": "3.5.2",
+    "rimraf": "6.0.1",
+    "size-limit": "11.1.6",
+    "tslib": "2.8.1",
+    "tsup": "8.3.6",
+    "typescript": "5.7.3",
+    "vite": "5.4.11",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "2.1.8"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}
