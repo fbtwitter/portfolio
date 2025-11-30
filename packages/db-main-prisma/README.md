@@ -1,10 +1,10 @@
 # @your-org/db-main-prisma
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/belgattitude/nextjs-monorepo-example/ci-packages.yml?style=for-the-badge&label=CI)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/fbtwitter/portfolio/ci-packages.yml?style=for-the-badge&label=CI)
 
 ## Intro
 
-Basic demo of a shared package using [prisma](<(https://prisma.io)>) to handle database access, part of the [nextjs-monorepo-example](https://github.com/belgattitude/nextjs-monorepo-example)
+Basic demo of a shared package using [prisma](<(https://prisma.io)>) to handle database access, part of the [portfolio](https://github.com/fbtwitter/portfolio)
 
 ## Quick start
 

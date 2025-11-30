@@ -1,6 +1,6 @@
 /**
  * Opinionated config base for projects that enable sonarjs
- * @see https://github.com/belgattitude/shared-dx/tree/main/packages/eslint-config-bases
+ * @see https://github.com/fbtwitter/shared-dx/tree/main/packages/eslint-config-bases
  */
 
 const { filePatterns } = require('../config/file-patterns');

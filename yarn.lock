@@ -15640,30 +15640,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"nextjs-monorepo-example@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "nextjs-monorepo-example@workspace:."
-  dependencies:
-    "@changesets/changelog-github": "npm:0.5.1"
-    "@changesets/cli": "npm:2.28.1"
-    "@commitlint/cli": "npm:19.7.1"
-    "@commitlint/config-conventional": "npm:19.7.1"
-    "@types/shell-quote": "npm:1.7.5"
-    "@your-org/eslint-config-bases": "workspace:^"
-    cross-env: "npm:7.0.3"
-    eslint: "npm:8.57.1"
-    husky: "npm:9.1.7"
-    lint-staged: "npm:15.4.3"
-    npm-run-all2: "npm:7.0.2"
-    prettier: "npm:3.5.2"
-    rimraf: "npm:6.0.1"
-    shell-quote: "npm:1.8.2"
-    syncpack: "npm:13.0.2"
-    turbo: "npm:2.4.4"
-    typescript: "npm:5.7.3"
-  languageName: unknown
-  linkType: soft
-
 "no-case@npm:^3.0.4":
   version: 3.0.4
   resolution: "no-case@npm:3.0.4"
@@ -16615,6 +16591,30 @@ __metadata:
   checksum: 10c0/45480d4c7281a134281cef092f6ecc202a868475ff66a390fee6e9261386e16f3047b4de46a2f2e1cf7fb7aa8f52d30b4ed631a1e3bcd6f303ca31161d4f07fe
   languageName: node
   linkType: hard
+
+"portfolio@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "portfolio@workspace:."
+  dependencies:
+    "@changesets/changelog-github": "npm:0.5.1"
+    "@changesets/cli": "npm:2.28.1"
+    "@commitlint/cli": "npm:19.7.1"
+    "@commitlint/config-conventional": "npm:19.7.1"
+    "@types/shell-quote": "npm:1.7.5"
+    "@your-org/eslint-config-bases": "workspace:^"
+    cross-env: "npm:7.0.3"
+    eslint: "npm:8.57.1"
+    husky: "npm:9.1.7"
+    lint-staged: "npm:15.4.3"
+    npm-run-all2: "npm:7.0.2"
+    prettier: "npm:3.5.2"
+    rimraf: "npm:6.0.1"
+    shell-quote: "npm:1.8.2"
+    syncpack: "npm:13.0.2"
+    turbo: "npm:2.4.4"
+    typescript: "npm:5.7.3"
+  languageName: unknown
+  linkType: soft
 
 "possible-typed-array-names@npm:^1.0.0":
   version: 1.0.0

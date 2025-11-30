@@ -21,7 +21,7 @@ docker compose down
 ### Cheat sheet
 
 ```bash
-export IMAGE=nextjs-monorepo-example-nextjs-app
+export IMAGE=portfolio-nextjs-app
 
 # Inspect the image
 docker image inspect ${IMAGE}

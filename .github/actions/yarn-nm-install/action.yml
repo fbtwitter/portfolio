@@ -16,7 +16,7 @@
 #          cache-install-state: false               # (default = 'false')              #
 #                                                                                      #
 # Reference:                                                                           #
-#   - latest: https://gist.github.com/belgattitude/042f9caf10d029badbde6cf9d43e400a    #
+#   - latest: https://gist.github.com/fbtwitter/042f9caf10d029badbde6cf9d43e400a    #
 #                                                                                      #
 # Versions:                                                                            #
 #   - 1.2.0 - 01-05-2024 - action/cache upraded to v4                                  #

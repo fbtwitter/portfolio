@@ -1,6 +1,6 @@
 /**
  * Custom config base for projects using typescript / javascript.
- * @see https://github.com/belgattitude/shared-dx/tree/main/packages/eslint-config-bases#belgattitudeeslint-config-bases
+ * @see https://github.com/fbtwitter/shared-dx/tree/main/packages/eslint-config-bases#fbtwittereslint-config-bases
  */
 
 module.exports = {

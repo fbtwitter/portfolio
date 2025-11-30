@@ -1,6 +1,6 @@
 /**
  * Opinionated config base for projects using playwright.
- * @see https://github.com/belgattitude/shared-dx/tree/main/packages/eslint-config-bases
+ * @see https://github.com/fbtwitter/shared-dx/tree/main/packages/eslint-config-bases
  */
 
 const playwrightPatterns = {

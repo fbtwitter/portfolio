@@ -25,13 +25,13 @@
   ],
   "author": {
     "name": "Vanvelthem Sébastien",
-    "url": "https://github.com/belgattitude"
+    "url": "https://github.com/fbtwitter"
   },
   "license": "MIT",
-  "homepage": "https://github.com/belgattitude/nextjs-monorepo-example",
+  "homepage": "https://github.com/fbtwitter/portfolio",
   "repository": {
     "type": "git",
-    "url": "https://github.com/belgattitude/nextjs-monorepo-example",
+    "url": "https://github.com/fbtwitter/portfolio",
     "directory": "packages/core-lib"
   },
   "scripts": {

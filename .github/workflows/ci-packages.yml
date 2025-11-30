@@ -31,7 +31,7 @@ jobs:
         node-version: [20.x]
     env:
       TURBO_API: 'http://127.0.0.1:9080'
-      TURBO_TEAM: 'nextjs-monorepo-example'
+      TURBO_TEAM: 'portfolio'
       TURBO_TOKEN: 'local_server_turbo_relaxed_token'
     steps:
       - uses: actions/checkout@v4

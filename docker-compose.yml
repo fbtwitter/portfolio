@@ -1,8 +1,8 @@
-name: nextjs-monorepo-example-db
+name: portfolio-db
 
 services:
   main-db:
-    container_name: nextjs-monorepo-example-db
+    container_name: portfolio-db
     image: postgres:16.3-alpine3.18
     ports:
       - target: 5432

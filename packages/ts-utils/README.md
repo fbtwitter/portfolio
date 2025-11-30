@@ -1,9 +1,9 @@
 # @your-org/ts-utils
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/belgattitude/nextjs-monorepo-example/ci-packages.yml?style=for-the-badge&label=CI)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/fbtwitter/portfolio/ci-packages.yml?style=for-the-badge&label=CI)
 
 > **Note**
-> This package is part of [belgattitude/nextjs-monorepo-example](https://github.com/belgattitude/nextjs-monorepo-example).
+> This package is part of [fbtwitter/portfolio](https://github.com/fbtwitter/portfolio).
 
 A package holding some basic typescript utilities: typeguards, assertions...
 

@@ -1,4 +1,4 @@
-name: nextjs-monorepo-example
+name: portfolio
 services:
   nextjs-app:
     container_name: 'nextjs-app'
@@ -7,10 +7,10 @@ services:
       dockerfile: ./docker/Dockerfile
     restart: always
     networks:
-      - nextjs-monorepo-example-network
+      - portfolio-network
     ports:
       - 3000:3000
 
 networks:
-  nextjs-monorepo-example-network:
+  portfolio-network:
     driver: bridge

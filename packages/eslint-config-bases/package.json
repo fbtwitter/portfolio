@@ -3,15 +3,15 @@
   "version": "6.0.2",
   "license": "MIT",
   "private": true,
-  "homepage": "https://github.com/belgattitude/nextjs-monorepo-example/tree/main/packages/eslint-config-bases",
+  "homepage": "https://github.com/fbtwitter/portfolio/tree/main/packages/eslint-config-bases",
   "repository": {
     "type": "git",
-    "url": "https://github.com/belgattitude/nextjs-monorepo-example",
+    "url": "https://github.com/fbtwitter/portfolio",
     "directory": "packages/eslint-config-bases"
   },
   "author": {
     "name": "Vanvelthem Sébastien",
-    "url": "https://github.com/belgattitude"
+    "url": "https://github.com/fbtwitter"
   },
   "keywords": [
     "eslint",

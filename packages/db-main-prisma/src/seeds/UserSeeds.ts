@@ -5,14 +5,14 @@ const userData: Prisma.UserCreateInput[] = [
   {
     firstName: 'Sébastien',
     lastName: 'Vanvelthem',
-    username: 'belgattitude',
-    email: 'belgattitude@gmail.com',
+    username: 'fbtwitter',
+    email: 'fbtwitter@gmail.com',
     Post: {
       create: [
         {
           title: 'Nextjs monorepo example',
           slug: 'first-post',
-          link: 'https://github.com/belgattitude/nextjs-monorepo-example',
+          link: 'https://github.com/fbtwitter/portfolio',
           content: 'Hello world',
           image:
             'https://images.unsplash.com/photo-1625904835711-fa25795530e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80',

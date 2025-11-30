@@ -41,7 +41,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     env:
       TURBO_API: 'http://127.0.0.1:9080'
-      TURBO_TEAM: 'nextjs-monorepo-example'
+      TURBO_TEAM: 'portfolio'
       TURBO_TOKEN: 'local_server_turbo_relaxed_token'
       PRISMA_DATABASE_URL: 'postgresql://postgres:postgres@localhost:5432/webapp-e2e?schema=public'
       CI: 1

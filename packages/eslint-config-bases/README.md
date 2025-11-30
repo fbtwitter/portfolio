@@ -1,11 +1,11 @@
 # @your-org/eslint-config-bases
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/belgattitude/nextjs-monorepo-example/ci-packages.yml?style=for-the-badge&label=CI)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/fbtwitter/portfolio/ci-packages.yml?style=for-the-badge&label=CI)
 
 # About
 
 Example of composable eslint config bases that can be easily shared and fine-tuned by apps and
-packages that lives in a [monorepo](https://github.com/belgattitude/nextjs-monorepo-example).
+packages that lives in a [monorepo](https://github.com/fbtwitter/portfolio).
 
 ## Features
 
@@ -40,23 +40,23 @@ file that extends any of the existing base configs. For example:
 
 ```javascript
 // next line only required if you're using a monorepo
-require("@your-org/eslint-config-bases/patch/modern-module-resolution");
+require('@your-org/eslint-config-bases/patch/modern-module-resolution');
 
 module.exports = {
   root: true,
   parserOptions: {
     tsconfigRootDir: __dirname,
-    project: "tsconfig.json",
+    project: 'tsconfig.json',
   },
-  ignorePatterns: ["**/node_modules", "**/.cache", "build", ".next"],
+  ignorePatterns: ['**/node_modules', '**/.cache', 'build', '.next'],
   extends: [
-    "@your-org/eslint-config-bases/typescript",
-    "@your-org/eslint-config-bases/sonar",
-    "@your-org/eslint-config-bases/regexp",
-    "@your-org/eslint-config-bases/react",
-    "@your-org/eslint-config-bases/react-query",
-    "@your-org/eslint-config-bases/jest",
-    "@your-org/eslint-config-bases/rtl",
+    '@your-org/eslint-config-bases/typescript',
+    '@your-org/eslint-config-bases/sonar',
+    '@your-org/eslint-config-bases/regexp',
+    '@your-org/eslint-config-bases/react',
+    '@your-org/eslint-config-bases/react-query',
+    '@your-org/eslint-config-bases/jest',
+    '@your-org/eslint-config-bases/rtl',
 
     // "@your-org/eslint-config-bases/mdx",
 
@@ -72,7 +72,7 @@ module.exports = {
 
     // Post configure the prettier base and run prettier
     // without conflicts thx to eslint-plugin-prettier
-    "@your-org/eslint-config-bases/prettier-plugin",
+    '@your-org/eslint-config-bases/prettier-plugin',
     // Alternatively to the above if you're already running prettier
     // we can get a speed up by using on eslint-prettier-config
     // "@your-org/eslint-config-bases/prettier-config",
@@ -149,7 +149,7 @@ Tune the behaviour by creating a config in ` .prettierrc.js`
 
 ```javascript
 // @ts-check
-const { getPrettierConfig } = require("@your-org/eslint-config-bases/helpers");
+const { getPrettierConfig } = require('@your-org/eslint-config-bases/helpers');
 
 /**
  * @type {import('prettier').Config}
@@ -217,10 +217,10 @@ To tune the behaviour, you can add setting in the top level config
 ```js
 module.exports = {
   settings: {
-    "mdx/code-blocks": true,
+    'mdx/code-blocks': true,
     // optional, if you want to disable language mapper, set it to `false`
     // if you want to override the default language mapper inside, you can provide your own
-    "mdx/language-mapper": {},
+    'mdx/language-mapper': {},
   },
 };
 ```

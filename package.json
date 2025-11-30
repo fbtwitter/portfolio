@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-monorepo-example",
+  "name": "portfolio",
   "private": true,
   "keywords": [
     "eslint-plugin",
@@ -14,12 +14,12 @@
     "workspace"
   ],
   "author": {
-    "name": "Vanvelthem Sébastien",
-    "url": "https://github.com/belgattitude"
+    "name": "Reza Fauzi Augusdi",
+    "url": "https://github.com/fbtwitter"
   },
   "license": "MIT",
-  "homepage": "https://github.com/belgattitude/nextjs-monorepo-example",
-  "repository": "belgattitude/nextjs-monorepo-example",
+  "homepage": "https://github.com/fbtwitter/portfolio",
+  "repository": "fbtwitter/portfolio",
   "scripts": {
     "check:git-pristine": "./scripts/check-git-pristine.sh",
     "clean:global-cache": "rimraf ./.cache",

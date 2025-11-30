@@ -1,17 +1,17 @@
 # The web-app
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/belgattitude/nextjs-monorepo-example/ci-nextjs-app.yml?style=for-the-badge&label=CI)
-![GitHub Workflow E2E Status](https://img.shields.io/github/actions/workflow/status/belgattitude/nextjs-monorepo-example/ci-e2e-nextjs-app.yml?style=for-the-badge&label=E2E)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/fbtwitter/portfolio/ci-nextjs-app.yml?style=for-the-badge&label=CI)
+![GitHub Workflow E2E Status](https://img.shields.io/github/actions/workflow/status/fbtwitter/portfolio/ci-e2e-nextjs-app.yml?style=for-the-badge&label=E2E)
 
 ## Intro
 
-Basic demo of a nextjs app, part of the [nextjs-monorepo-example](https://github.com/belgattitude/nextjs-monorepo-example).
+Basic demo of a nextjs app, part of the [portfolio](https://github.com/fbtwitter/portfolio).
 
 - Home: [Demo/Vercel](https://monorepo-nextjs-app.vercel.app)
 - SSR-I18n: [Demo/Vercel english](https://monorepo-nextjs-app.vercel.app/en/home) | [Demo/vercel french](https://monorepo-nextjs-app.vercel.app/fr/home)
 - REST API: [Demo rest/Vercel](https://monorepo-nextjs-app.vercel.app/api/rest/post/1)
 - GRAPHIQL (pothos): [Demo/Vercel](https://monorepo-nextjs-app.vercel.app/api/graphql)
-- [Changelog](https://github.com/belgattitude/monorepo-nextjs-app/blob/main/apps/nextjs-app/CHANGELOG.md)
+- [Changelog](https://github.com/fbtwitter/monorepo-nextjs-app/blob/main/apps/nextjs-app/CHANGELOG.md)
 
 ## Quick start
 
@@ -29,7 +29,7 @@ For rest/api database access be sure to start
 docker-compose up main-db
 ```
 
-To create the database and seed it: see the [@your-org/db-main-prisma README](https://github.com/belgattitude/nextjs-monorepo-example/blob/main/packages/db-main-prisma/README.md).
+To create the database and seed it: see the [@your-org/db-main-prisma README](https://github.com/fbtwitter/portfolio/blob/main/packages/db-main-prisma/README.md).
 
 ### Features
 
@@ -46,7 +46,7 @@ To create the database and seed it: see the [@your-org/db-main-prisma README](ht
 
 ### Monorepo deps
 
-This app relies on packages in the monorepo, see detailed instructions in [README.md](https://github.com/belgattitude/nextjs-monorepo-example)
+This app relies on packages in the monorepo, see detailed instructions in [README.md](https://github.com/fbtwitter/portfolio)
 
 ```json5
 {
