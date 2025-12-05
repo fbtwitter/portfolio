@@ -2052,7 +2052,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/babel-plugin@npm:^11.13.5":
+"@emotion/babel-plugin@npm:11.13.5, @emotion/babel-plugin@npm:^11.13.5":
   version: 11.13.5
   resolution: "@emotion/babel-plugin@npm:11.13.5"
   dependencies:
@@ -13222,6 +13222,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"qr-code@workspace:apps/qr-code":
+  version: 0.0.0-use.local
+  resolution: "qr-code@workspace:apps/qr-code"
+  dependencies:
+    "@babel/core": "npm:7.26.9"
+    "@emotion/babel-plugin": "npm:11.13.5"
+    "@emotion/react": "npm:11.14.0"
+    "@emotion/styled": "npm:11.14.0"
+    "@types/react": "npm:18.3.18"
+    "@types/react-dom": "npm:18.3.5"
+    "@vitejs/plugin-react": "npm:4.3.3"
+    "@vitest/coverage-v8": "npm:2.1.8"
+    "@vitest/ui": "npm:2.1.8"
+    "@your-org/common-i18n": "workspace:^"
+    "@your-org/core-lib": "workspace:^"
+    "@your-org/eslint-config-bases": "workspace:^"
+    "@your-org/ui-lib": "workspace:^"
+    eslint: "npm:8.57.1"
+    eslint-plugin-tailwindcss: "npm:3.18.0"
+    happy-dom: "npm:17.1.8"
+    prettier: "npm:3.5.2"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    rimraf: "npm:6.0.1"
+    sass-embedded: "npm:1.93.3"
+    tailwindcss: "npm:3.4.17"
+    typescript: "npm:5.7.3"
+    vite: "npm:5.4.11"
+    vite-plugin-svgr: "npm:4.3.0"
+    vite-tsconfig-paths: "npm:5.1.4"
+    vitest: "npm:2.1.8"
+  languageName: unknown
+  linkType: soft
+
 "queue-microtask@npm:^1.2.2":
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
@@ -16115,39 +16149,6 @@ __metadata:
   checksum: 10c0/e5d9eb4810623f23758cfc2205323e33552fb5972e5c2e6587babe08fe4d24859866277404fb9e2a20afb71013860d96ec806cb257536ae463c87d70022ab9ef
   languageName: node
   linkType: hard
-
-"vite-app@workspace:apps/qr-code":
-  version: 0.0.0-use.local
-  resolution: "vite-app@workspace:apps/qr-code"
-  dependencies:
-    "@babel/core": "npm:7.26.9"
-    "@emotion/react": "npm:11.14.0"
-    "@emotion/styled": "npm:11.14.0"
-    "@types/react": "npm:18.3.18"
-    "@types/react-dom": "npm:18.3.5"
-    "@vitejs/plugin-react": "npm:4.3.3"
-    "@vitest/coverage-v8": "npm:2.1.8"
-    "@vitest/ui": "npm:2.1.8"
-    "@your-org/common-i18n": "workspace:^"
-    "@your-org/core-lib": "workspace:^"
-    "@your-org/eslint-config-bases": "workspace:^"
-    "@your-org/ui-lib": "workspace:^"
-    eslint: "npm:8.57.1"
-    eslint-plugin-tailwindcss: "npm:3.18.0"
-    happy-dom: "npm:17.1.8"
-    prettier: "npm:3.5.2"
-    react: "npm:18.3.1"
-    react-dom: "npm:18.3.1"
-    rimraf: "npm:6.0.1"
-    sass-embedded: "npm:1.93.3"
-    tailwindcss: "npm:3.4.17"
-    typescript: "npm:5.7.3"
-    vite: "npm:5.4.11"
-    vite-plugin-svgr: "npm:4.3.0"
-    vite-tsconfig-paths: "npm:5.1.4"
-    vitest: "npm:2.1.8"
-  languageName: unknown
-  linkType: soft
 
 "vite-node@npm:2.1.8":
   version: 2.1.8
