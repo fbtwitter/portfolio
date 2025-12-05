@@ -1,3 +1,5 @@
+@use 'mixins';
+
 /**
  * Set up a decent box model on the root element
  */
@@ -70,7 +72,7 @@ a {
     text-decoration: none !important;
   }
 
-  @include on-event {
+  @include mixins.on-event {
     color: var(--var-text-color);
   }
 }
